@@ -1,6 +1,31 @@
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.5rem 1.5rem;
     margin: 30px
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem 1.5rem;
+        margin: 30px
+    }
+}
+@media screen and (max-width: 778px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 1.5rem;
+        margin: 30px
+    }
+}
+@media screen and (max-width: 560px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem 1.5rem;
+        margin: 30px
+    }
 }

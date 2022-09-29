@@ -23,8 +23,8 @@ function Dashboard() {
                     {/* grid of classtiles */}
                     <div className={styles.grid}>
                         {
-                            classesList.map( (classObject) => {
-                                return <ClassTile {...classObject} />
+                            classesList.map( (classObject, index) => {
+                                return <ClassTile key={index} {...classObject} />
                             })
                         }
                     </div>
