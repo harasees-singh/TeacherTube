@@ -29,7 +29,7 @@ function Dashboard() {
                         }
                     </div>
                 </Route>
-                <Route path='/dashboard/class'>
+                <Route path='/dashboard/*'>
                     <Classroom />
                 </Route>
                 <Route path='*'><NotFound /></Route>

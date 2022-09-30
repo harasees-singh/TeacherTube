@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 const ClassTile: React.FC<{ instructor: string, course: string }> = ({ instructor, course }) => {
     const history = useHistory();
     const tileClickHandler = () => {
-        history.push('/dashboard/class')
+        history.push(`dashboard/${course}`)
     }
     return (
 
