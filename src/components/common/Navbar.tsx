@@ -2,8 +2,9 @@ import React from 'react'
 import classes from './Navbar.module.css'
 import img from './atcoder.png'
 import Modal from './Modal'
-import {useState} from 'react'
+import { useState } from 'react'
 import ReactDOM from 'react-dom'
+import { AnimatePresence } from 'framer-motion'
 function Navbar() {
     const [showModal, setShowModal] = useState(false);
     const renderModalHandler = () => {
@@ -16,7 +17,14 @@ function Navbar() {
                 <button onClick={renderModalHandler}>join class</button>
                 <img src={img}></img>
             </div>
-            {showModal && ReactDOM.createPortal(<Modal setShowModal={setShowModal} />, document.getElementById('modal')!) }
+            {/* <AnimatePresence> */}
+                {/* {showModal && */}
+                    {ReactDOM.createPortal(
+                        <Modal setShowModal={setShowModal} showModal={showModal} />
+                        , document.getElementById('modal')!
+                    )}
+                {/* } */}
+            {/* </AnimatePresence> */}
         </div>
     )
 }

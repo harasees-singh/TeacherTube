@@ -1,11 +1,11 @@
 .tile{
-    background-color: azure;
+    background-color: white;
     padding: 15px;
-    box-shadow: 2px 2px 15px 2px rgb(152, 152, 152);
+    box-shadow: 2px 2px 12px 0.2px rgb(152, 152, 152, 0.4);
     border-radius: 8px;
     height: 10rem;
 }
 .tile:hover{
     cursor: pointer;
-    background-color: rgb(212, 255, 255);
+    background-color: rgb(246, 246, 246);
 }
